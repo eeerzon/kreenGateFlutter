@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window saat proses mulai (sama seperti app asli: system splash Android 12+ dengan ikon launcher, background putih) -->
+    <style name="LaunchTheme" parent="Theme.KreenGate">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <!-- Tema window di belakang Flutter. Dipakai juga oleh dialog native (Printama DeviceListFragment,
+         AlertDialog & ProgressDialog AsyncEscPosPrint) supaya tampilannya sama dengan app asli. -->
+    <style name="NormalTheme" parent="Theme.KreenGate">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- res/values/themes.xml app asli -->
+    <style name="Base.Theme.KreenGate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="Theme.KreenGate" parent="Base.Theme.KreenGate" />
+</resources>
